@@ -79,7 +79,7 @@ output "DP-1" {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "1920x1080@74.973"
+    mode "1920x1080@59.96"
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
     scale 1
 
@@ -106,12 +106,18 @@ output "HDMI-A-1"{
   position x=1920 y=0
 }
 
+overview{
+  backdrop-color "6f4e37"
+}
+
+prefer-no-csd
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 16
+    gaps 10
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -130,7 +136,7 @@ layout {
         proportion 0.5
         proportion 0.66667
 
-        // Fixed sets the width in logical pixels exactly.
+// Fixed sets the width in logical pixels exactly.
         // fixed 1920
     }
 
@@ -156,10 +162,10 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        //off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 1
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -167,7 +173,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#4f3a2c"
+        active-color "#6f4e37"
 
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
@@ -261,13 +267,14 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+spawn-at-startup "quickshell"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww img ~/.config/niri/Wallpaper-Cream.png"
+spawn-at-startup "swww img ~/.config/niri/retropixel.jpg"
 spawn-at-startup "elephant"
 hotkey-overlay {
   skip-at-startup
 }
+
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
@@ -331,7 +338,7 @@ window-rule {
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }

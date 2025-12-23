@@ -1,54 +1,26 @@
-import Quickshell
 import QtQuick
 import QtQuick.Layouts
-import Quickshell.Io
+import Quickshell
+import Quickshell.Wayland
+import Niri 0.1
+import "./modules/bar/"
 
-PanelWindow{
-  anchors{
-    top:true;
-    left:true;
-    right:true;
+
+ShellRoot{
+
+  id:root
+
+  Niri{
+    id: niri
+    Component.onCompleted: connect()
+
+    onConnected: console.info("Connected to niri")
+
+    onErrorOccurred: function(error) {
+      console.error("Niri error:", error)
+    }
   }
   
-  color:'transparent'; 
-  implicitHeight:20;
-  Rectangle{
-    
-  }
-  Rectangle{
-    anchors.fill:parent;
-    color:"#222222";
-    bottomLeftRadius: 10;
-    bottomRightRadius: 10;
-
-    //Left
-    RowLayout{
-      anchors{
-        left:parent.left;
-        leftMargin:30;
-      }
-    }
-    //Center
-    RowLayout{
-      anchors{
-        horizontalCenter: parent.horizontalCenter;
-        verticalCenter: parent.verticalCenter;
-      }
-
-      Text{
-        text:"Hello World";
-        font.pixelSize:16;
-        color:"#999999"
-      }
-    }
-    //Right
-    RowLayout{
-      anchors{
-        verticalCenter:parent.verticalCenter;
-        right:parent.right;
-        rightMargin:30;
-      }
-    }
-
-  }
+  LazyLoader{ active: true; component: Bar{} }
 }
+
