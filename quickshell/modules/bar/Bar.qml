@@ -8,37 +8,50 @@ PanelWindow{
   anchors{
     top:true;
     left:true;
-    // right:true; 
-    bottom:true;
+    right:true; 
+    //bottom:true;
   }
   color: "black"; 
-  implicitWidth:30;
-  
+  implicitWidth:10;
+  implicitHeight: 30;  
   Rectangle{
     anchors.fill:parent;
-    color:"#6f4e37";
+    color:"#11151C";
     topLeftRadius: 10;
     topRightRadius: 2;
     bottomLeftRadius: 10;
     bottomRightRadius: 2;
 
-    //Left
-    ColumnLayout{
+    //Top
+    RowLayout{
       anchors{
         top: parent.top;
-        horizontalCenter: parent.horizontalCenter;
+        left: parent.left;
+        //horizontalCenter: parent.horizontalCenter;
       }
-      //Loader {active: true; sourceComponent: Workspaces{}}
+      Loader {active: true; sourceComponent: Applications{}}
     }
     //Center
-    ColumnLayout{
+    RowLayout{
       anchors{
         horizontalCenter: parent.horizontalCenter;
+        top: parent.top;
         verticalCenter: parent.verticalCenter;
       }
 
       Loader {active: true; sourceComponent: Workspaces{}}
     }
-  
+
+    RowLayout{
+      anchors{
+        right:parent.right;
+        top: parent.top;
+        //verticalCenter: parent.verticalCenter;
+        //horizontalCenter: parent.horizontalCenter;
+
+      }
+
+      Loader {active:true; sourceComponent: Time{}}
+    }
   }
 }

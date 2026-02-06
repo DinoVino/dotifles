@@ -9,7 +9,7 @@ import "./modules/bar/"
 ShellRoot{
 
   id:root
-
+  property string time;
   Niri{
     id: niri
     Component.onCompleted: connect()
@@ -20,7 +20,10 @@ ShellRoot{
       console.error("Niri error:", error)
     }
   }
-  
-  LazyLoader{ active: true; component: Bar{} }
+  Variants {
+    model: Quickshell.screens
+    LazyLoader{ active: true; component: Bar{} }
+  }
+
 }
 

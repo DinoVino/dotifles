@@ -7,20 +7,21 @@ Rectangle{
     left: parent.left;
   } 
   color:parent.color;
-  height: 100;
+  height: 10;
   //width: parent.width;
   radius:5;
 
   Rectangle{
     id: workspaceLayout;
     anchors{
-      verticalCenter: parent.verticalCenter;
+      horizontalCenter: parent.horizontalCenter;
+      verticalCenter: parent.verticalCenter; 
       left: parent.left;
       right: parent.right;
 
     }
 
-    ColumnLayout{
+    RowLayout{
       
       anchors{
         horizontalCenter: parent.horizontalCenter;
@@ -37,7 +38,7 @@ Rectangle{
           width: 8;
           height: 8;
           radius: 10;
-          color: model.isActive ? "#FED8B1": "#A67B5b";
+          color: model.isActive ? "#A67B5b": "#212D40";
 
           MouseArea{
             anchors.fill: parent;
