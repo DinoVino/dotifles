@@ -14,41 +14,41 @@ PanelWindow{
   color: "black"; 
   implicitWidth:10;
   implicitHeight: 30;  
+
   Rectangle{
     anchors.fill:parent;
     color:"#11151C";
-    topLeftRadius: 10;
-    topRightRadius: 2;
-    bottomLeftRadius: 10;
-    bottomRightRadius: 2;
 
     //Top
-    RowLayout{
+    ColumnLayout{
       anchors{
         top: parent.top;
         left: parent.left;
+        leftMargin: 7; 
         //horizontalCenter: parent.horizontalCenter;
       }
       Loader {active: true; sourceComponent: Applications{}}
     }
     //Center
-    RowLayout{
+    ColumnLayout{
       anchors{
         horizontalCenter: parent.horizontalCenter;
+        //verticalCenter: parent.verticalCenter;
         top: parent.top;
-        verticalCenter: parent.verticalCenter;
+        topMargin: 6;
       }
 
       Loader {active: true; sourceComponent: Workspaces{}}
     }
 
-    RowLayout{
+    ColumnLayout{
       anchors{
         right:parent.right;
         top: parent.top;
+        bottom: parent.bottom;
         //verticalCenter: parent.verticalCenter;
         //horizontalCenter: parent.horizontalCenter;
-
+        margins: 7;
       }
 
       Loader {active:true; sourceComponent: Time{}}

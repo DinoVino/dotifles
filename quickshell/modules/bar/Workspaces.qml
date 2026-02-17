@@ -7,7 +7,7 @@ Rectangle{
     left: parent.left;
   } 
   color:parent.color;
-  height: 10;
+  height: 20;
   //width: parent.width;
   radius:5;
 
@@ -28,7 +28,7 @@ Rectangle{
         verticalCenter: parent.verticalCenter;
       }
       
-      spacing: 5;
+      spacing: 7;
 
       Repeater{
         model: niri.workspaces;
