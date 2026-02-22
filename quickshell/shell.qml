@@ -24,6 +24,10 @@ ShellRoot{
     model: Quickshell.screens
     LazyLoader{ active: true; component: Bar{} }
   }
-
+  
+  //Variants {
+  //  model: Quickshell.screens;
+  //  LazyLoader{ active:true; component: LeftBar{}}
+  //}
 }
 

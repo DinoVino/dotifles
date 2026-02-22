@@ -25,7 +25,7 @@ PanelWindow{
       anchors{
         top: parent.top;
         left: parent.left;
-        topMargin: 2;
+        topMargin: 4;
         //leftMargin: 7; 
         //horizontalCenter: parent.horizontalCenter;
       }
