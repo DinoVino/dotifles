@@ -8,9 +8,10 @@ import Quickshell.Io
     id: clock;
     text: root.time;
     color: "white";
-    height: 15;
-    font.pointSize: 10;
-    font.family: "ttf-cascadia-mono-nerd";
+    height: 30;
+    width: 65;
+    font.pointSize: 16;
+    font.family: "arcadeclassic";
     Process{
       id: dateProcess;
       command: ["date","+%R"]

@@ -6,18 +6,17 @@ Rectangle{
   anchors{
     left: parent.left;
   } 
-  color:parent.color;
-  height: 20;
+  implicitWidth: 150;
+  implicitHeight: 26;
+  color: "#11151c";
   //width: parent.width;
-  radius:5;
+  radius: 10;
 
   Rectangle{
     id: workspaceLayout;
     anchors{
       horizontalCenter: parent.horizontalCenter;
       verticalCenter: parent.verticalCenter; 
-      left: parent.left;
-      right: parent.right;
 
     }
 

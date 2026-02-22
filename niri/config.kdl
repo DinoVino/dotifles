@@ -269,7 +269,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "quickshell"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww img ~/.config/niri/wallpapers/abstract-grid.jpg"
+spawn-at-startup "swww img ~/.config/niri/wallpapers/cars.png"
 spawn-at-startup "elephant"
 spawn-at-startup "wired -r"
 
