@@ -110,7 +110,7 @@ overview{
   backdrop-color "#11151C"
 }
 
-prefer-no-csd
+//prefer-no-csd
 
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -165,7 +165,7 @@ layout {
         //off
 
         // How many logical pixels the ring extends out from the windows.
-        width 1
+        width 3
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -173,7 +173,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#6f4e37"
+        active-color "#27384eb1"
 
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
@@ -214,7 +214,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-        // on
+        //on
 
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
@@ -282,7 +282,7 @@ hotkey-overlay {
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
 // This option will also fix border/focus ring drawing behind some semitransparent windows.
 // After enabling or disabling this, you need to restart the apps for this to take effect.
-// prefer-no-csd
+//prefer-no-csd
 
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.

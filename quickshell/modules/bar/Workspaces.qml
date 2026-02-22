@@ -38,7 +38,7 @@ Rectangle{
           width: 8;
           height: 8;
           radius: 10;
-          color: model.isActive ? "#A67B5b": "#212D40";
+          color: model.isActive ? "#f0ffffff": "#212D40";
 
           MouseArea{
             anchors.fill: parent;
