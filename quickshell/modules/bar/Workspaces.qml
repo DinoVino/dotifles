@@ -26,19 +26,21 @@ Rectangle{
       anchors{
         horizontalCenter: parent.horizontalCenter;
         verticalCenter: parent.verticalCenter;
-      }
-      
-      spacing: 7;
+      } 
+      spacing: 15;
 
       Repeater{
         model: niri.workspaces;
-
+        
         Rectangle{
           visible: index < 11;
-          width: 8;
+          width: model.isActive ? 12:8;
           height: 8;
           radius: 10;
           color: model.isActive ? "#f0ffffff": "#212D40";
+          Behavior on width{
+            NumberAnimation {duration: 150; easing.type:Easing.OutQuad}
+          }
 
           MouseArea{
             anchors.fill: parent;
