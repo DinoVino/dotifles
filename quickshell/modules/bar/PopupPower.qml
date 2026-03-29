@@ -7,7 +7,7 @@ PopupWindow{
   parentWindow: bar;
   width: 200;
   height: 50;
-  
+  color: "#090c0f";
   anchor.rect.y: 30;
 
   Process{
