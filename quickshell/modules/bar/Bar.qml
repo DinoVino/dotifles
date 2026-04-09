@@ -19,11 +19,10 @@ PanelWindow{
     anchors.fill:parent;
     //color: "transparent";
     color: "#090c0f";
-    radius: 10;
     //Top or Left
     ColumnLayout{
       anchors{
-        top: parent.top;
+        top: parent.top 
         left: parent.left;
         topMargin: 4;
         //leftMargin: 7; 

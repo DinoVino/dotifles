@@ -9,7 +9,6 @@ PopupWindow{
   height: 50;
   color: "#090c0f";
   anchor.rect.y: 30;
-
   Process{
     id: shutdownCommand;
     command: ["shutdown","now"];

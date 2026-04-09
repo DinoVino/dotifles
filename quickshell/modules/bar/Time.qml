@@ -12,6 +12,7 @@ import Quickshell.Io
     width: 65;
     font.pointSize: 16;
     font.family: "arcadeclassic";
+    
     Process{
       id: dateProcess;
       command: ["date","+%R"]

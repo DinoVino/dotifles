@@ -8,9 +8,9 @@ Rectangle{
   } 
   implicitWidth: workspaceLayout.implicitWidth *2;
   implicitHeight: 22;
-  color: "#11151c";
+  color: "transparent";
   //width: parent.width;
-  radius: 10;
+  //radius: 5;
 
   Rectangle{
     id: workspaceLayout;
