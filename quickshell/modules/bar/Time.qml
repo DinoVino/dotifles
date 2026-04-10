@@ -1,19 +1,14 @@
+pragma Singleton
+
 import QtQuick
-import QtQuick.Layouts
 import Quickshell
 import Quickshell.Io
 
+Singleton {
+  id: root;
+  property string time;
 
-  Text{
-    id: clock;
-    text: root.time;
-    color: "white";
-    height: 30;
-    width: 65;
-    font.pointSize: 16;
-    font.family: "arcadeclassic";
-    
-    Process{
+  Process{
       id: dateProcess;
       command: ["date","+%R"]
       stdout: StdioCollector{
@@ -21,10 +16,10 @@ import Quickshell.Io
       }
     }
 
-    Timer{
-      interval:1000;
-      running:true;
-      repeat:true;
-      onTriggered: dateProcess.running = true;
-    }
+  Timer{
+    interval:1000;
+    running:true;
+    repeat:true;
+    onTriggered: dateProcess.running = true;
   }
+}
