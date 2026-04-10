@@ -1,5 +1,5 @@
 # Vinnie Dotfiles
-This is my personal configuration. Currently running on EndeavourOS (Arch) but will make the switch to NixOS for the configuration. 
+This is my personal configuration. Currently running on EndeavourOS (Arch) but will make the switch to [Redacted] for the configuration. 
 For the time being, this will be how the configuration will be developed. 
 
 ## Stack
