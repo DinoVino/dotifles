@@ -7,6 +7,7 @@ For the time being, this will be how the configuration will be developed.
 - Wayland (protocol)
 - WindowManager: Niri
 - Statusbar: Quickshell
+- Lockscreen: Swaylock (transitioning to Quickshell)
 - Background manager: awww
 
 ### Applications
@@ -29,6 +30,7 @@ For the time being, this will be how the configuration will be developed.
   - [ ] Sound
   - [x] Time
   - [ ] Date
+- [ ] Lockscreen
 - [ ] Rounded Wrapped corners
 - [ ] Power controls
   - [x] Popup Window implemented
