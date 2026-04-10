@@ -57,7 +57,7 @@ Scope {
           //horizontalCenter: parent.horizontalCenter;
           margins: 1;
         }
-        Loader {active:true; sourceComponent: Time{}}
+        Loader {active:true; sourceComponent: ClockWidget{}}
       }
     }
   }
