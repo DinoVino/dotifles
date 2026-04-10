@@ -1,15 +1,15 @@
-import QtQuick
-import QtQuick.Layouts
-import Quickshell
-import Quickshell.Wayland
-import Niri 0.1
-import "./modules/bar/"
-
+import QtQuick;
+import QtQuick.Layouts;
+import Quickshell;
+import Quickshell.Wayland;
+import Niri 0.1;
+import "./modules/bar/";
+import "./services/" as QsServices;
 
 ShellRoot{
 
-  id:root
-  property string time;
+  id:root;
+  readonly property var timeService: QsServices.Time;
   Niri{
     id: niri
     Component.onCompleted: connect()

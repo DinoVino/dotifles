@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
-
 Scope{
   id: root;
   property string time;
@@ -55,7 +54,7 @@ Scope{
         // Bottom or Right
         ColumnLayout{
           anchors{
-            right:parent.right;
+            right: parent.right;
             top: parent.top;
             bottom: parent.bottom;
             //verticalCenter: parent.verticalCenter;
