@@ -20,7 +20,7 @@ For the time being, this will be how the configuration will be developed.
 ## Quickshell To do list
 - [ ] Create singletons for the following services:
   - [ ] Sound
-  - [ ] Time 
+  - [x] Time 
 - [ ] Systemtray
   - [ ] Popup Window implemented
   - [ ] Theme implemented
