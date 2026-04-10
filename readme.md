@@ -32,7 +32,7 @@ For the time being, this will be how the configuration will be developed.
   - [ ] Date
 - [ ] Lockscreen
 - [ ] Rounded Wrapped corners
-- [ ] Power controls
+- [ ] Power controls, look at the example from Quickshell (WLogout) 
   - [x] Popup Window implemented
   - [x] Power Off
   - [x] Reboot
