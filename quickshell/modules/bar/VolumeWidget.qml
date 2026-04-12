@@ -40,7 +40,7 @@ Scope{
       implicitHeight: 50;
 
       color: transparent;
-
+      mask: Region{}
       RowLayout {
         anchors{
           fill: parent;

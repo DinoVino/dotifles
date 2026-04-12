@@ -62,6 +62,7 @@ Scope{
             margins: 1;
           }
           Loader {active:true; sourceComponent: ClockWidget{}}
+          Loader {active: true; sourceComponent: VolumeWidget{}}
         }
       }
     }
