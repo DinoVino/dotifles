@@ -37,7 +37,7 @@ Scope{
             //leftMargin: 7; 
             //horizontalCenter: parent.horizontalCenter;
           }
-          Loader {active: true; sourceComponent: Workspaces{}}
+          //Loader {active: true; sourceComponent: Workspaces{}}
         }
     
         //Center
@@ -46,9 +46,9 @@ Scope{
             horizontalCenter: parent.horizontalCenter;
             //verticalCenter: parent.verticalCenter;
             top: parent.top;
-            topMargin: 0;
+            topMargin: 4;
           }
-          Loader {active: true; sourceComponent: Applications{}}
+          Loader {active: true; sourceComponent: Workspaces{}}
         }
         
         // Bottom or Right
