@@ -43,7 +43,17 @@ Rectangle{
           transform: Scale {xScale: Logic.workspaceExpansion(model.isActive)}
           radius: 10;
           color: model.isActive ? "#f0ffffff": "#212D40";
-          
+
+          Behavior on transform{
+            PropertyAnimation{
+              easing{
+                type: Easing.OutElastic
+                amplitude: 1.0 
+                period: 0.5
+              }
+            }
+          }
+
           MouseArea{
             anchors.fill: parent;
             cursorShape: Qt.PointingHandCursor;
